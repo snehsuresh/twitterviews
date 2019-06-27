@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('/static/pic1.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+#chart1{
+    float: left;
+    width: 50%;
+}
+
+#chart2{
+    float: right;
+    width: 50%;
+}
+
+#legend1{
+
+    width: 80px;
+    height: 40px;
+    background: #d70206;
+    position: absolute;
+    top: 10%;
+    left: 48%;
+    color: whitesmoke;
+    text-align: center;
+
+}
+#legend2{
+
+    width: 80px;
+    height: 40px;
+    background: #f05b4f;
+    position: absolute;
+    top: 20%;
+    left: 48%;
+    color: whitesmoke;
+    text-align: center;
+
+}
+
+#legend3{
+
+    width: 80px;
+    height: 40px;
+    background:#f4c63d;
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    color: whitesmoke;
+    text-align: center;
+
+}

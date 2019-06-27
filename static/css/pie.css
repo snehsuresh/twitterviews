@@ -1,0 +1,35 @@
+body,
+html {
+  min-height: 100vh !important;
+}
+
+.m_div {
+  display: flex;
+  flex-direction: left;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.ct-chart {
+  width: 60%;
+}
+canvas {
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+}
+
+h3 {
+  text-align: center;
+  color: #33313b;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+
+#chart1{
+  width: auto;
+  height: auto;
+}

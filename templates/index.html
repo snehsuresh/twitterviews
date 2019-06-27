@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Twitterview</title>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+
+
+
+<body>
+  <div class="half" id="publicidade">
+    <div class="fundo-cor"></div>
+    <div class="fundo"></div>
+    <div class="w-100 h-100 d-flex justify-content-center align-items-center p-5">
+      <h1 class="hero-title text-white w-100 p-5">
+        Get reviews from the <span>real</span> people
+      </h1>
+    </div>
+  </div>
+  <div class="half" id="wpLogin" style="background: white">
+    <div class="wrap">
+          <img src="/static/twitterviews.png" class="img-responsive" alt="Responsive image"></div>
+
+    <div class="flex-container-center">
+      <div id="loginBox">
+        <form method="POST" action="/read">
+          <div class="container p-3 text-center">
+
+            <div class="login-header flex-container-center" style="color:#051641">
+              <h4>Reviews from Twitter</h4>
+            </div>
+            <div class="mt-4 p-3">
+              <div class="row">
+                <div class="input-group mb-3">
+                  <input type="text" name="product" class="form-control" placeholder="Search a product" autocomplete="off">
+                </div>
+              </div>
+              <button class="btn-login my-3">
+                Search
+              </button>
+            </div>
+
+            <div class="contactus">
+              <a href=mailto:snehsuresh02@gmail.com?cc=reshmaphilip97@gmail.com&subject="Reg:feedback">Contact Us</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/pie.css') }}">
+  <title>Pie chart</title>
+</head>
+
+<body style="background: #ececec">
+
+  <div id="chart_wrap">
+      <div id="chart_div"></div>
+
+  <div class="ct-chart">
+    <h3>{{ pname }}</h3>
+    <canvas id="chart1"></canvas>
+  </div>
+
+</div>
+
+
+
+<script>
+
+  var ctx = document.getElementById('chart1').getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Positive', 'Negative', 'Neutral'],
+      datasets: [{
+        label: '# of Votes',
+        data: [{{ positives }}, {{ negatives }}, {{ neutrals }}],
+  backgroundColor: [
+    'rgba(0, 128, 0, 0.4)',
+    'rgba(255, 0, 0, 0.4)',
+    'rgba(0, 0, 255, 0.4)'
+  ],
+    borderColor: [
+      'rgba(0, 128, 0, 1)',
+      'rgba(255, 0, 0, 1)',
+      'rgba(0, 0, 255, 1)'
+    ],
+      borderWidth: 1
+      }]
+  }
+});
+
+
+
+</script>
+
+  </div>
+
+</body>
+
+</html>

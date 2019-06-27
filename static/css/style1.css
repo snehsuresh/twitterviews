@@ -1,0 +1,77 @@
+body {
+
+  background: #ececec ;
+  font-family: sans-serif;
+}
+
+a.navbar-brand {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+h {
+  color: darkblue;
+  font-family: arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  text-align: center;
+}
+.container{
+  padding-top: 50px;
+}
+.mainheads{
+  color:#33313b;
+  text-align: center;
+  text-shadow: 0.25px 0.25px blue;
+
+}
+.productname {
+  font-family: arial, sans-serif;
+  font-size: medium;
+  text-align: center;
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+th, td {
+  padding: 15px;
+  align: center;
+  border-width: 0px 1px;
+}
+
+#st {
+  height: 550px;
+  width: 100%;
+  border-radius: 15px;
+  background: #144c52;
+  color: whitesmoke;
+}
+
+#tw {
+  height: 550px;
+  width: 100%;
+  border-radius: 15px;
+  background: #144c52;
+  color: whitesmoke;
+}
+
+#tulist {
+  background: #144c52;
+  padding: 20px;
+  border-radius: 15px 50px;
+  opacity: 50%;
+  height: 500px;
+  overflow-y: scroll;
+  margin-bottom: 50px;
+}
+
+#tlist {
+  background: ##9a424b;
+  color: whitesmoke;
+  padding: 10px;
+  margin: 5px;
+}
